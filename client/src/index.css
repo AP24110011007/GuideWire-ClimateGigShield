@@ -1,0 +1,141 @@
+/* Design System Colors */
+:root {
+  --color-primary: #1E3A8A;
+  --color-accent: #2563EB;
+  --color-bg-white: #FFFFFF;
+  --color-bg-light: #F8FAFC;
+  --color-text-dark: #0F172A;
+  --color-text-medium: #475569;
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+  --color-border: #E2E8F0;
+  --color-shadow: rgba(15, 23, 42, 0.08);
+  --color-shadow-md: rgba(15, 23, 42, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--color-shadow-md);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: white;
+  padding: 12px 24px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-primary);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  padding: 10px 22px;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--color-bg-light);
+}
+
+.btn-success {
+  background: var(--color-success);
+  color: white;
+  padding: 12px 24px;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: #16a34a;
+}
+
+.btn-error {
+  background: var(--color-error);
+  color: white;
+  padding: 12px 24px;
+}
+
+.btn-error:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  font-family: inherit;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--color-bg-white);
+  color: var(--color-text-dark);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder {
+  color: var(--color-text-medium);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 12px 0;
+}

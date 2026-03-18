@@ -1,0 +1,83 @@
+.payout-display {
+  padding: 0;
+}
+
+.payout-display h2 {
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.payout-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: #fef2f2;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+  margin-bottom: 16px;
+}
+
+.payout-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.payout-text {
+  flex: 1;
+}
+
+.payout-message {
+  color: var(--color-text-dark);
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.payout-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+}
+
+.payout-amount .label {
+  color: var(--color-text-medium);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.payout-amount .value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-error);
+}
+
+.payout-note {
+  background: #f0f9ff;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-text-medium);
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .payout-amount {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .payout-amount .value {
+    font-size: 24px;
+  }
+}

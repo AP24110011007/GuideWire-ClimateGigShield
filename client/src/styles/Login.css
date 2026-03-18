@@ -1,0 +1,128 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-bg-light);
+  padding: 20px;
+}
+
+.login-box {
+  background: var(--color-bg-white);
+  border-radius: 12px;
+  padding: 48px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.login-title {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+  color: var(--color-text-medium);
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--color-bg-white);
+  color: var(--color-text-dark);
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.error-message {
+  background: #fef2f2;
+  color: var(--color-error);
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 4px solid var(--color-error);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--color-accent);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--color-shadow-md);
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.demo-credentials {
+  background: #f0f9ff;
+  border-left: 4px solid var(--color-accent);
+  padding: 16px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.demo-title {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.demo-credentials p {
+  color: var(--color-text-medium);
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.demo-credentials strong {
+  font-family: 'Courier New', monospace;
+  background: var(--color-bg-white);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}

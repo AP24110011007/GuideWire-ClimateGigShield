@@ -1,0 +1,102 @@
+.shieldpoints-display {
+  padding: 0;
+}
+
+.shieldpoints-display h2 {
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.points-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  border: 1px solid #bbf7d0;
+  margin-bottom: 16px;
+}
+
+.points-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.points-text {
+  flex: 1;
+}
+
+.points-message {
+  color: var(--color-text-dark);
+  font-size: 14px;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.points-amounts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbf7d0;
+  font-size: 13px;
+}
+
+.amount-row .label {
+  color: var(--color-text-medium);
+  font-weight: 600;
+}
+
+.amount-row .value {
+  font-weight: 700;
+  color: var(--color-success);
+  font-size: 16px;
+}
+
+.amount-row.total {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.amount-row.total .value {
+  color: var(--color-success);
+  font-size: 18px;
+}
+
+.points-note {
+  background: #f0f9ff;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-text-medium);
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .amount-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .amount-row .value {
+    font-size: 14px;
+  }
+
+  .amount-row.total .value {
+    font-size: 16px;
+  }
+}
