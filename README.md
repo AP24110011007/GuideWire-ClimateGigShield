@@ -373,6 +373,7 @@ MIT - Free to use and modify
 **Weekly Income Shield** - Making gig work safer and more predictable
 
 ---
-
+## 🎥 Demo Video
+👉 [Watch Demo](https://drive.google.com/file/d/1BzLy94PITpRe54kF9oxdYh0UigkY3oBY/view?usp=sharing)
 **Questions?** Check the inline code comments for implementation details!
 
